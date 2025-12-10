@@ -12,13 +12,12 @@ Datasets:
 The Indic-Bengali is a dataset consist of audio files of 70 volunteers who received counseling.
 
 How to download
-The EATD-Corpus can be downloaded at https://1drv.ms/u/s!AsGVGqImbOwYhHUHcodFC3xmKZKK?e=mCT5oN. Password: Ymj26Uv5
+The Indic-Bengali can be downloaded at https://drive.google.com/drive/folders/1dJyKYYkIKXq8QEx9H11LRlIBMDQsxZVQ
 
 How to use
 Dataset used 5-fold speaker independent.
 
 Each fold contains unique speaker data.
 
-label.txt: Raw SDS score
-new_label.txt: Standard SDS score (Raw SDS score multiplied by 1.25)
+bangla_5fold_metadata.csv file contains meta data
 ----
