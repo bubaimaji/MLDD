@@ -8,7 +8,6 @@
 Datasets:
 ----
 
-
 The Indic-Bengali is a dataset consist of audio files of 70 volunteers who received counseling.
 
 How to download
@@ -22,5 +21,13 @@ Each fold contains unique speaker data.
 
 bangla_5fold_metadata.csv file contains meta data
 
+------
+DAIC-WOZ and EDAIC
+------
+[DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/) dataset. 
+------
+Androids-Corpus (Italian)
+------
+[Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
 
-----
+
