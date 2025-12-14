@@ -1,4 +1,4 @@
-## Multi-Lingual Depression Detection Using Speech Foundation Models and Interpretable Acoustic Features ##
+## Joint Representation Learning of Speech Foundation Models and Acoustic Features for Multilingual Depression Detection ##
 
 
 
