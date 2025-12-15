@@ -18,11 +18,16 @@
 
 To get started, follow the steps below.
 
-# Create a Conda environment with Python 3.10
 
+## Option 3: EXACTLY what you showed in your example
+```markdown
 ```bash
+# Create a Conda environment with Python 3.10
 conda create -n myenv python=3.10
 conda activate myenv
+
+## 2. Install dependencies:
+pip install -r requirements.txt
 
 
 2. Install dependencies:
