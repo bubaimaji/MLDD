@@ -17,25 +17,16 @@
 ## Installation
 
 To get started, follow the steps below.
-
-
-## Option 3: EXACTLY what you showed in your example
-```markdown
-```bash
+<pre>
 # Create a Conda environment with Python 3.10
 conda create -n myenv python=3.10
 conda activate myenv
-
+</pre>
 ## 2. Install dependencies:
-pip install -r requirements.txt
-
-
-2. Install dependencies:
 After activating the environment, run the following command to install the required dependencies:
-
-```bash
+<pre>
 pip install -r requirements.txt
-
+</pre>
 
 ---
 ### 3. Datasets:
