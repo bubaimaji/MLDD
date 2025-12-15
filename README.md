@@ -1,8 +1,6 @@
 # Joint Representation Learning of Speech Foundation Models and Acoustic Features for Multilingual Depression Detection
 
-This repository presents a joint representation learning framework that combines
-speech foundation model embeddings with handcrafted acoustic features for
-multilingual depression detection.
+This repository presents a joint representation learning framework that combines speech foundation model embeddings with handcrafted acoustic features for multilingual depression detection.
 
 ---
 
@@ -28,8 +26,7 @@ To get started, follow the steps below.
 conda create -n myenv python=3.10
 conda activate myenv
 
-
-Install dependencies:
+### 2. Install dependencies:
 
 After activating the environment, run the following command to install the required dependencies:
 
@@ -38,7 +35,7 @@ pip install -r requirements.txt
 
 
 ---
-Datasets:
+### 3. Datasets:
 ----
 
 The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals).
