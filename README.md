@@ -3,9 +3,8 @@
 ---
 
 ## Repository Structure
-
-- `notebooks`  
-  Contains a full codes of our method on Depression Detection along with notebooks for generating all plots.
+ 
+  This repository contains full codes of our method for Depression Detection along with generating all plots.
 
 - `Bengali Folder`  
   Contains code for feature extraction, preprocessing, classification, statistical analysis, and confusion metrics and ROC plot.
@@ -16,7 +15,7 @@
 - `English Folder`  
   Contains code for DAIC-WOZ and EDAIC feature extraction, preprocessing, classification,, and confusion metrics and ROC plot.
   
--`Cross-corpus Folder`  
+- `Cross-corpus Folder`  
   Contains code for cross-corpus and mixlingual experimets.
 
 ---
