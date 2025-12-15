@@ -1,7 +1,5 @@
 # Joint Representation Learning of Speech Foundation Models and Acoustic Features for Multilingual Depression Detection
 
-This repository presents a joint representation learning framework that combines speech foundation model embeddings with handcrafted acoustic features for multilingual depression detection.
-
 ---
 
 ## Repository Structure
@@ -25,6 +23,7 @@ To get started, follow the steps below.
 ```bash
 conda create -n myenv python=3.10
 conda activate myenv
+
 
 ### 2. Install dependencies:
 
