@@ -53,13 +53,11 @@ bangla_5fold_metadata.csv file contains meta data
 
 ------
 ### DAIC-WOZ and EDAIC
-------
-[DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/) dataset. 
+These two data can be downloaded from here: [DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/). 
 
 ------
 ### Androids-Corpus (Italian)
-------
-[Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
+Download the data from here: [Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
 
 
 
