@@ -23,7 +23,7 @@
 ## Installation
 
 To get started, follow the steps below.
-# Create a Conda environment with Python 3.10
+## 1. Create a Conda environment with Python 3.10
 <pre>
 conda create -n myenv python=3.10
 conda activate myenv
