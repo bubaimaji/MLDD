@@ -52,11 +52,11 @@ To reproduce our results reported in the paper on the Bengali language, please f
 ### Indic-Bengali
 The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals). 
 
-- <a href="https://drive.google.com/drive/folders/1dJyKYYkIKXq8QEx9H11LRlIBMDQsxZVQ" target="_blank" rel="noopener noreferrer"> Sample Data</a>
+- <a href="https://drive.google.com/drive/folders/1dJyKYYkIKXq8QEx9H11LRlIBMDQsxZVQ" target="_blank" rel="noopener noreferrer"> Sample Data</a> can be found here.
 
 To access the full dataset, please fill out this below form to get the Google Drive link:
 
-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Request Dataset Access</a>
+- <a href="https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Request Full Dataset Access</a>
 
 ### Form Requirements:
 `Name`, `University`, `Department`, `Email address`, and `Ethical consent agreement` 
