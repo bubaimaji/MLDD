@@ -50,10 +50,12 @@ To reproduce our results reported in the paper on the Bengali language, please f
 ### 3. Datasets:
 ----
 ### Indic-Bengali
-The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals).
+The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals). To access the dataset, please fill out this below form to get the Google Drive link:
+https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor
+### Form Requirements:
+- Name, - University, - Department,- Email address, and- Ethical consent agreement
 
-How to download
-The Indic-Bengali can be downloaded at (https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor)
+After submitting the form with consent, you will receive the Google Drive link via email within a few minutes.
 
 How to use
 
