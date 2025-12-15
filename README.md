@@ -5,20 +5,27 @@
 ## Repository Structure
 
 - `notebooks`  
-  Contains a full demo of our method applied to the RAVDESS dataset, along with
-  notebooks for generating all plots.
+  Contains a full codes of our method on Depression Detection along with notebooks for generating all plots.
 
-- `modules`  
-  Contains code for feature extraction, preprocessing, emotion classification,
-  feature importance analysis, and regression.
+- `Bengali Folder`  
+  Contains code for feature extraction, preprocessing, classification, statistical analysis, and confusion metrics and ROC plot.
+  
+  - `Italian Folder`  
+  Contains code for Androids corpus feature extraction, preprocessing, classification, and confusion metrics and ROC plot.
+
+- `English Folder`  
+  Contains code for DAIC-WOZ and EDAIC feature extraction, preprocessing, classification,, and confusion metrics and ROC plot.
+  
+  `Cross-corpus Folder`  
+  Contains code for cross-corpus and mixlingual experimets.
 
 ---
 
 ## Installation
 
 To get started, follow the steps below.
-<pre>
 # Create a Conda environment with Python 3.10
+<pre>
 conda create -n myenv python=3.10
 conda activate myenv
 </pre>
