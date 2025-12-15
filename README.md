@@ -1,7 +1,26 @@
 ## Joint Representation Learning of Speech Foundation Models and Acoustic Features for Multilingual Depression Detection ##
 
 
+------
+###Repository Structure
+notebooks contains a full demo of our method being applied to the RAVDESS dataset and a notebook to get all the plots
+modules contains code for feature extraction, preprocessing, emotion classification, feature importance and regression
 
+###Installation
+To get started, follow the steps below:
+
+Create a Conda environment with Python Python 3.10:
+
+```bash
+conda create -n myenv python=3.10
+conda activate myenv
+
+Install dependencies:
+
+After activating the environment, run the following command to install the required dependencies:
+
+```bash
+pip install -r requirements.txt
 
 
 ---
@@ -30,5 +49,6 @@ DAIC-WOZ and EDAIC
 Androids-Corpus (Italian)
 ------
 [Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
+
 
 
