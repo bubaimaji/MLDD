@@ -54,8 +54,6 @@ The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depress
 
 - <a href="https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Request Dataset Access</a>
 
-<a href="https://google.com" target="_blank" rel="noopener noreferrer">Test Link</a>
-
 ### Form Requirements:
 `Name`, `University`, `Department`, `Email address`, and `Ethical consent agreement` 
 
