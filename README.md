@@ -20,10 +20,10 @@ To get started, follow the steps below.
 
 ### 1. Create a Conda environment with Python 3.10
 
-```bash
+<pre>
 conda create -n myenv python=3.10
 conda activate myenv
-
+</pre>
 
 ### 2. Install dependencies:
 
