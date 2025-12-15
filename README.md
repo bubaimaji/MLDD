@@ -19,7 +19,7 @@
   Contains code for cross-corpus and mixlingual experimets.
 
 ---
-
+To fully reproduce our results reported in the paper, please follow the below steps: 
 ### Installation
 
 To get started, follow the steps below.
@@ -28,11 +28,23 @@ To get started, follow the steps below.
 conda create -n myenv python=3.10
 conda activate myenv
 </pre>
-### 2. Install dependencies:
-After activating the environment, run the following command to install the required dependencies:
+### 2. Clone the reop:
+After activating the environment, run the following command to clone this repo:
+<pre>
+https://github.com/bubaimaji/MLDD.git
+</pre>
+### 3. Install dependencies:
+After cloning this repo in your environment, run the following command to install the required dependencies:
 <pre>
 pip install -r requirements.txt
 </pre>
+
+### 2. Run:
+To reproduce our results reported in the paper on the Bengali language, please follow the below steps: 
+<pre>
+
+</pre>
+
 
 ---
 ### 3. Datasets:
