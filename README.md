@@ -10,13 +10,13 @@
 - `Bengali Folder`  
   Contains code for feature extraction, preprocessing, classification, statistical analysis, and confusion metrics and ROC plot.
   
-  - `Italian Folder`  
+- `Italian Folder`  
   Contains code for Androids corpus feature extraction, preprocessing, classification, and confusion metrics and ROC plot.
 
 - `English Folder`  
   Contains code for DAIC-WOZ and EDAIC feature extraction, preprocessing, classification,, and confusion metrics and ROC plot.
   
-  `Cross-corpus Folder`  
+-`Cross-corpus Folder`  
   Contains code for cross-corpus and mixlingual experimets.
 
 ---
