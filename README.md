@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ---
 ### 3. Datasets:
 ----
-
+### Indic-Bengali
 The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals).
 
 How to download
@@ -52,12 +52,12 @@ Each fold contains unique speaker data.
 bangla_5fold_metadata.csv file contains meta data
 
 ------
-DAIC-WOZ and EDAIC
+### DAIC-WOZ and EDAIC
 ------
 [DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/) dataset. 
 
 ------
-Androids-Corpus (Italian)
+### Androids-Corpus (Italian)
 ------
 [Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
 
