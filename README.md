@@ -40,11 +40,7 @@ pip install -r requirements.txt
 </pre>
 
 ### 2. Run:
-To reproduce our results reported in the paper on the Bengali language, please follow the below steps: 
-<pre>
-
-</pre>
-
+To reproduce our results reported in the paper, please go through each folder. 
 
 ---
 ### 3. Datasets:
