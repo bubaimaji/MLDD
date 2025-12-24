@@ -1,4 +1,4 @@
-# Joint Representation Learning of Speech Foundation Models and Acoustic Features for Multilingual Depression Detection
+# Multilingual Depression Detection
 
 ---
 
