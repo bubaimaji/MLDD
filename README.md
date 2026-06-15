@@ -1,6 +1,31 @@
 # Multilingual Depression Detection
 
 ---
+---
+### 3.Download Indic-Bengali Depression Datasets:
+----
+The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals). 
+
+- <a href="https://drive.google.com/drive/folders/1dJyKYYkIKXq8QEx9H11LRlIBMDQsxZVQ" target="_blank" rel="noopener noreferrer"> Sample Data</a> can be found here.
+
+To access the full dataset, please fill out this below form to get the Google Drive link:
+
+- <a href="https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Request Full Dataset Access</a>
+
+### Form Requirements:
+`Name`, `University`, `Department`, `Email address`, and `Ethical consent agreement` 
+
+After submitting the form with consent, you will receive the Google Drive link via email within a few minutes.
+
+### How to use:
+
+Dataset used 5-fold speaker independent.
+
+Each fold contains unique speaker data.
+
+bangla_5fold_metadata.csv file contains meta data
+
+------
 
 ### Repository Structure
  
@@ -42,32 +67,7 @@ pip install -r requirements.txt
 ### 2. Run:
 To reproduce our results reported in the paper, please go through each folder. 
 
----
-### 3. Datasets:
-----
-### Indic-Bengali
-The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals). 
 
-- <a href="https://drive.google.com/drive/folders/1dJyKYYkIKXq8QEx9H11LRlIBMDQsxZVQ" target="_blank" rel="noopener noreferrer"> Sample Data</a> can be found here.
-
-To access the full dataset, please fill out this below form to get the Google Drive link:
-
-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSckj6z6tdl63eZCj-gPhpRYCuCpYRC3ybta56Xq_DjpdxCJzA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Request Full Dataset Access</a>
-
-### Form Requirements:
-`Name`, `University`, `Department`, `Email address`, and `Ethical consent agreement` 
-
-After submitting the form with consent, you will receive the Google Drive link via email within a few minutes.
-
-### How to use:
-
-Dataset used 5-fold speaker independent.
-
-Each fold contains unique speaker data.
-
-bangla_5fold_metadata.csv file contains meta data
-
-------
 ### DAIC-WOZ and EDAIC
 These two data can be downloaded from here: [DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/). 
 
