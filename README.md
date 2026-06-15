@@ -25,6 +25,12 @@ Each fold contains unique speaker data.
 bangla_5fold_metadata.csv file contains meta data
 
 ------
+### DAIC-WOZ and EDAIC
+These two data can be downloaded from here: [DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/). 
+
+------
+### Androids-Corpus (Italian)
+Download the data from here: [Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
 
 ### Repository Structure
  
@@ -67,12 +73,7 @@ pip install -r requirements.txt
 To reproduce our results reported in the paper, please go through each folder. 
 
 
-### DAIC-WOZ and EDAIC
-These two data can be downloaded from here: [DAIC-WOZ and EDAIC](https://dcapswoz.ict.usc.edu/). 
 
-------
-### Androids-Corpus (Italian)
-Download the data from here: [Androids-Corpus](https://github.com/androidscorpus/data) dataset. 
 
 
 
