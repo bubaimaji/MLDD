@@ -1,7 +1,7 @@
 # Multilingual Depression Detection
 
 ---
-### 3.Download Indic-Bengali Depression Datasets:
+### 3. Download Indic-Bengali Depression Datasets:
 ----
 The Indic-Bengali is a dataset consist of audio files of 70 subjects (30 depressed and 40 healthy individuals). 
 
