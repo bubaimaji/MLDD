@@ -162,42 +162,59 @@ class CrossAttentionFusion(nn.Module):
         )
 
     def _fuse(self, Xs):
-        """
-        Internal: given list Xs = [X_A, X_B] (each [B, in_dim]),
-        return fused embedding [B, 2*latent]
-        """
-        # project each modality: [B, in_dim] -> [B, latent]
+    
+        # -----------------------------------------------------
+        # 1. Convert feature vectors into multiple tokens
+        # -----------------------------------------------------
         A = self.proj[0](Xs[0])
         B = self.proj[1](Xs[1])
-
-        # treat each modality as a single token: [B, 1, latent]
-        A = A.unsqueeze(1)
-        B = B.unsqueeze(1)
-
-        # === Cross Attention: A attends to B ===
-        # Q=A, K=B, V=B  -> A receives info from B
-        A2, _ = self.att_AtoB(A, B, B)
+    
+        # A: [B, T_A, latent]
+        # B: [B, T_B, latent]
+    
+        # -----------------------------------------------------
+        # 2. SFM/Modality A attends to acoustic modality B
+        # -----------------------------------------------------
+        A2, _ = self.att_AtoB(
+            query=A,
+            key=B,
+            value=B
+        )
+    
         A = self.norm_A1(A + A2)
-
-        # === Cross Attention: B attends to A ===
-        # Q=B, K=A, V=A  -> B receives info from A
-        B2, _ = self.att_BtoA(B, A, A)
+    
+        # -----------------------------------------------------
+        # 3. Acoustic modality B attends to modality A
+        # -----------------------------------------------------
+        B2, _ = self.att_BtoA(
+            query=B,
+            key=A,
+            value=A
+        )
+    
         B = self.norm_B1(B + B2)
-
-        # === Feed-forward per modality ===
+    
+        # -----------------------------------------------------
+        # 4. Feed-forward transformation
+        # -----------------------------------------------------
         A_ff = self.ff_A(A)
         A = self.norm_A2(A + A_ff)
-
+    
         B_ff = self.ff_B(B)
         B = self.norm_B2(B + B_ff)
-
-        # remove the token dimension: [B, 1, latent] -> [B, latent]
-        A_vec = A.squeeze(1)
-        B_vec = B.squeeze(1)
-
-        # fused representation: concatenate
-        fused = torch.cat([A_vec, B_vec], dim=-1)   # [B, 2*latent]
+    
+        # -----------------------------------------------------
+        # 5. Pool tokens after cross-attention
+        # -----------------------------------------------------
+        A_vec = A.mean(dim=1)
+        B_vec = B.mean(dim=1)
+    
+        # [B, latent] + [B, latent]
+        fused = torch.cat([A_vec, B_vec], dim=-1)
+    
+        # [B, 2*latent]
         return fused
+
 
     def forward(self, Xs):
         fused = self._fuse(Xs)
