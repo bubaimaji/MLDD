@@ -14,7 +14,7 @@ To access the full dataset, please fill out this below form to get the Google Dr
 ### Form Requirements:
 `Name`, `University`, `Department`, `Email address`, and `Ethical consent agreement` 
 
-After submitting the form with consent, you will receive the Google Drive link via email within a few minutes.
+After submitting the form with consent, you will receive a Google Drive link to download the data.
 
 ### How to use:
 
