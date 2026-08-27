@@ -109,9 +109,15 @@ class CrossAttentionFusion(nn.Module):
         super().__init__()
         assert len(dims) == 2, "CrossAttentionFusion currently assumes exactly 2 modalities."
 
-        # per-modality projection to common latent space
-        self.proj = nn.ModuleList([ModalityProj(d, latent) for d in dims])
-
+        #  Convert each modality's feature vector into multiple feature-group tokens
+        self.proj = nn.ModuleList([
+            FeatureGroupTokenizer(
+                in_dim=d,
+                latent=latent,
+                group_size=16
+            )
+            for d in dims
+        ])
         # cross-attention (A->B and B->A)
         self.att_AtoB = nn.MultiheadAttention(
             embed_dim=latent,
