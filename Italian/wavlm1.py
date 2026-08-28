@@ -9,14 +9,14 @@ from transformers import Wav2Vec2FeatureExtractor, WavLMModel
 # -------------------------------------------------
 # CONFIG
 # -------------------------------------------------
-metadata_csv = "/home/bubai-maji/bubai/Bangla/bangla_5fold_metadata.csv"
+metadata_csv = "/home/bubai-maji/bubai/Itali/speaker_metadata.csv"
 df = pd.read_csv(metadata_csv)
 
 required_cols = {"seg_path", "label", "fold", "speaker_id"}
 if not required_cols.issubset(df.columns):
     raise ValueError(f"Metadata must contain columns: {required_cols}")
 
-output_dir = "/home/bubai-maji/bubai/revision2/bangla_feature/WavLM_large_temporal_5fold"
+output_dir = "/home/bubai-maji/bubai/itali_feature/WavLM_large_temporal_5fold"
 os.makedirs(output_dir, exist_ok=True)
 
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
