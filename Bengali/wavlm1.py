@@ -16,7 +16,7 @@ required_cols = {"seg_path", "label", "fold", "speaker_id"}
 if not required_cols.issubset(df.columns):
     raise ValueError(f"Metadata must contain columns: {required_cols}")
 
-output_dir = "/home/bubai-maji/bubai/revision2/bangla_feature/WavLM_large_temporal_5fold"
+output_dir = "/home/bubai-maji/bubai/bangla_feature/WavLM_large_temporal_5fold"
 os.makedirs(output_dir, exist_ok=True)
 
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
