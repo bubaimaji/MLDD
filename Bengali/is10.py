@@ -27,7 +27,7 @@ if not required_cols.issubset(df.columns):
 # OUTPUT
 # -------------------------------------------------
 output_dir = (
-    "/home/bubai-maji/bubai/revision2/bangla_feature/"
+    "/home/bubai-maji/bubai/bangla_feature/"
     "IS10_LLD_5fold"
 )
 
