@@ -25,7 +25,7 @@ print(f"Columns found: {list(df.columns)}")
 # -------------------- INITIALIZE OPENSMILE --------------------
 smile = opensmile.Smile(
     feature_set=opensmile.FeatureSet.eGeMAPSv02,
-    feature_level=opensmile.FeatureLevel.Functionals
+    feature_level=opensmile.FeatureLevel.LowLevelDescriptors
 )
 
 # -------------------- EXTRACT FEATURES --------------------
