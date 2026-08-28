@@ -26,13 +26,9 @@ print(f"Columns: {list(df.columns)}\n")
 # -------------------- INIT OPENSMILE --------------------
 smile = opensmile.Smile(
     feature_set=opensmile.FeatureSet.IS10,
-    feature_level=opensmile.FeatureLevel.Functionals
+    feature_level=opensmile.FeatureLevel.LowLevelDescriptors
 )
 
-#smile = opensmile.Smile(
-    #feature_set=opensmile.FeatureSet.eGeMAPSv02,
-    #feature_level=opensmile.FeatureLevel.Functionals
-#)
 
 print("Loaded openSMILE ComParE 2016 Functionals (1582-D)\n")
 
