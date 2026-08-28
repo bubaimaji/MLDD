@@ -7,30 +7,18 @@ import opensmile
 # -------------------------------------------------
 # CONFIG
 # -------------------------------------------------
-metadata_csv = "/home/bubai-maji/bubai/Bangla/bangla_5fold_metadata.csv"
+metadata_csv = "/home/bubai-maji/bubai/Itali/speaker_metadata.csv"
 df = pd.read_csv(metadata_csv)
 
-required_cols = {
-    "seg_path",
-    "label",
-    "fold",
-    "speaker_id",
-    "utterance_id"
-}
-
+# Ensure necessary columns exist
+required_cols = {'seg_path', 'label', 'fold', 'speaker_id', 'utterance_id'}
 if not required_cols.issubset(df.columns):
-    raise ValueError(
-        f"Metadata must contain columns: {required_cols}"
-    )
+    raise ValueError(f"Metadata must contain columns: {required_cols}")
 
-# -------------------------------------------------
-# OUTPUT
-# -------------------------------------------------
-output_dir = (
-    "/home/bubai-maji/bubai/revision2/bangla_feature/"
-    "IS10_LLD_5fold"
-)
-
+# ---------------------------------------
+# Step 2: Setup output directory
+# ---------------------------------------
+output_dir = "Itali/features_npy/IS10"
 os.makedirs(output_dir, exist_ok=True)
 
 # -------------------------------------------------
