@@ -119,8 +119,6 @@ def make_collate_fn(max_frames=MAX_FRAMES):
 # MODEL
 # =====================================================
 class SinusoidalPositionalEncoding(nn.Module):
-    """MultiheadAttention has no notion of order by itself -- without this,
-    cross-attention over frames would be permutation-invariant in time."""
     def __init__(self, dim, max_len=2000):
         super().__init__()
         pe = torch.zeros(max_len, dim)
@@ -152,13 +150,7 @@ class FrameProj(nn.Module):
 
 
 def masked_mean(x, pad_mask):
-    """
-    x:        [B, T, D]
-    pad_mask: [B, T]  True at PAD positions
-    Padded timesteps must NOT count toward the mean -- the old code's
-    plain .mean(dim=1) would have silently pulled real utterance
-    representations toward zero once sequences got padded.
-    """
+   
     valid = (~pad_mask).unsqueeze(-1).float()   # [B, T, 1]
     summed = (x * valid).sum(dim=1)             # [B, D]
     counts = valid.sum(dim=1).clamp(min=1.0)    # [B, 1]
@@ -167,10 +159,9 @@ def masked_mean(x, pad_mask):
 
 class CrossAttentionFusion(nn.Module):
     """
-    Genuine bidirectional cross-attention over TEMPORAL TOKEN SEQUENCES
+    cross-attention over TEMPORAL TOKEN SEQUENCES
     (frame-level SFM embeddings x frame-level acoustic LLDs), not single
-    utterance-level vectors. With T_A, T_B > 1 this is no longer the
-    degenerate case Reviewer 5 identified.
+    utterance-level vectors. With T_A, T_B > 1
     """
     def __init__(self, dims, latent=LATENT, heads=HEADS, dropout=DROPOUT):
         super().__init__()
@@ -244,7 +235,7 @@ class CrossAttentionFusion(nn.Module):
         return fused.detach()
 
     def attention_maps(self, Xs, masks):
-        """For the interpretability analysis Reviewer 2 (comment 7) is asking for."""
+        """For the interpretability analysis"""
         with torch.no_grad():
             _, attn = self._fuse(Xs, masks, return_attn=True)
         return attn
